@@ -1,0 +1,7 @@
+Step 1 - npm install & npm i concurrently - For DB and server need to run simulteniously 
+
+Step 2- Add Below lines in script -   
+"server": "cd server && npm run dev",
+"dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+
+Step 3- npm i react-router-dom
