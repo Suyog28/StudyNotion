@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa';
 import HighlightText from '../components/core/HomePage/HighlightText';
 import CTAbutton from '../components/core/HomePage/Button';
-import BannerVideo from "../assets/Images/banner.mp4"
+import BannerVideo from "../assets/Images/banner.mp4";
+import CodeBlocks from "../components/core/HomePage/CodeBlocks";
 
 const Home = () => {
     return (
@@ -52,6 +53,38 @@ const Home = () => {
                     <div className='absolute box-border w-[99%] border-b-[20px] inset-x-6 bottom-[-20px] h-8'>
 
                     </div>
+                </div>
+
+                {/* {codeSection1} */}
+                <div>
+                    <CodeBlocks
+                        position={`lg:flex-row`}
+                        heading={
+                            <div className='text-4xl font-semibold'>
+                                Unlock your <HighlightText text={"coding potential"} />
+                                with our online courses.
+                            </div>
+                        }
+                        subheading={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
+                        ctabtn1={
+                            {
+                                btnText: "Try it Yourself",
+                                linkto: "/signup",
+                                active: true
+                            }
+                        }
+                        ctabtn2={
+                            {
+                                btnText: "Learn More",
+                                linkto: "/login",
+                                active: false
+                            }
+                        }
+
+
+                    />
+                    codeblock={``}
+                    codeColor={""}
                 </div>
 
             </div>
