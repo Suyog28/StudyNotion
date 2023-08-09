@@ -9,12 +9,13 @@ import Button from '../components/core/HomePage/Button';
 import TimeLineSection from '../components/core/HomePage/TimeLineSection';
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection';
 import InstructorSection from "../components/core/HomePage/InstructorSection";
+import ExploreMore from "../components/core/HomePage/ExploreMore";
 
 
 const Home = () => {
     return (
         <div>
-            Section1
+            {/* Section1 */}
             <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center 
       text-white justify-between'>
                 <Link to={"/signup"}>
@@ -123,6 +124,7 @@ const Home = () => {
                         codeColor={"text-richblack-50"}
                     />
                 </div>
+                <ExploreMore />
             </div>
             {/*Section 2  */}
             <div className='bg-pure-greys-5 text-richblack-700'>

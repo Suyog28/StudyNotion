@@ -26,7 +26,6 @@ const InstructorSection = () => {
                                 Start Teaching Today
                                 <FaArrowRight />
                             </div>
-
                         </Button>
                     </div>
 
